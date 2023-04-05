@@ -25,7 +25,7 @@ void setup()
 }
 long sonar1(void) // 초음파 센서 1번 측정 함수
 {
-  long duration, distance;
+  long duration1, distance1;
   digitalWrite(TRIG1, HIGH);
   delayMicroseconds(10);
   digitalWrite(TRIG1, LOW);
@@ -36,9 +36,9 @@ long sonar1(void) // 초음파 센서 1번 측정 함수
 }
 
 
-long sonar1(void) // 초음파 센서 1번 측정 함수
+long sonar2(void) // 초음파 센서 2번 측정 함수
 {
-  long duration, distance;
+  long duration2, distance2;
   digitalWrite(TRIG2, HIGH);
   delayMicroseconds(10);
   digitalWrite(TRIG2, LOW);
@@ -50,9 +50,10 @@ long sonar1(void) // 초음파 센서 1번 측정 함수
 
 
 
-long sonar1(void) // 초음파 센서 1번 측정 함수
+long sonar3(void) // 초음파 센서 3번 측정 함수
 {
-  long duration, distance;
+  // put your main code here, to run repeatedly:
+  long duration3, distance3;
   digitalWrite(TRIG3, HIGH);
   delayMicroseconds(10);
   digitalWrite(TRIG3, LOW);
@@ -65,16 +66,18 @@ long sonar1(void) // 초음파 센서 1번 측정 함수
 
 void loop()
 {
-  // put your main code here, to run repeatedly:
   
   //Serial.print("Duration:");
   //Serial.println(duratoin);
   Serial.print("Distance:");
   Serial.println( sonar1 ());
+  
   Serial.print("Distance:");
   Serial.println( sonar2 ());
+  
   Serial.print("Distance:");
   Serial.println( sonar3 ());
+  
   delay(500);
 
 }
