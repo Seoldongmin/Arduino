@@ -67,8 +67,8 @@ long sonar3(void) // 초음파 센서 3번 측정 함수
 void loop()
 {
   
-  //Serial.print("Duration:");
-  //Serial.println(duratoin);
+  Serial.print("Duration:");
+  Serial.println(duratoin);
   Serial.print("Distance:");
   Serial.println( sonar1 ());
   
